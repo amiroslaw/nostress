@@ -15,6 +15,7 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 
 /* @import url('css/bootstrap.css'); */
 /* @import url('css/grayscale.css'); */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,latin-ext);
 .logo {
     width: 400px;
     float: left;

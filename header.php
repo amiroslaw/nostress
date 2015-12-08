@@ -65,9 +65,16 @@
                     <li>
                         <a class="page-scroll" href="#sklad-zespolu">Skład zespołu</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#multimedia">Multimedia</a>
-                    </li>
+		  <li class="dropdown page-scroll"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Multimedia<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#slajd">Zdjęcia</a></li>
+          </ul>
+        </li>
+                    <!-- <li> -->
+                    <!--     <a class="page&#45;scroll" href="#multimedia">Multimedia</a> -->
+                    <!-- </li> -->
                     <li>
                         <a class="page-scroll" href="#partnerzy">Partnerzy</a>
                     </li>
