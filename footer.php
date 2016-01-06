@@ -3,7 +3,8 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-4 ">
-            <p style="float:left; width:400px;"><a href="mailto:nostress6@o2.pl">nostress6@o2.pl</a> </p>
+                    <p>Zespół muzyczny NoStress</p>
+            <p ><a href="mailto:nostress6@o2.pl">nostress6@o2.pl</a> </p>
                 </div>
                 <div class="col-sm-4 ">
 <a style="width:70px; margin:auto;" href="#page-top" class="btn btn-circle page-scroll">
@@ -16,5 +17,4 @@
     </footer>
 <?php wp_footer(); ?>
 </body>
-
 </html>

@@ -1,4 +1,19 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * e.g., it puts together the home page when no home.php file exists.
+ *
+ * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
+ *
+ * @package WordPress
+ * @subpackage Grayscale Bootstrap Theme
+ * @since Grayscale Bootstrap Theme
+ */
+get_header(); ?>
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
@@ -56,10 +71,11 @@ if ( $the_query->have_posts() ) {
 		</div>
 	</div>
         <div class="row">
-            <div class="col-md-6">
-<img class="img-responsive" alt="" src="<?php echo get_template_directory_uri(); ?>/img/zalacznik2.jpg"/>
+            <div class="col-sm-5 col-sm-offset-1">
+<img class="img-responsive img-rounded" alt="" src="<?php echo get_template_directory_uri(); ?>/img/zalacznik2.jpg"/>
+                </br>
 	</div>
-            <div class="col-md-6">
+            <div class="col-sm-5">
 <?php
 		echo the_content() ;
 	}
@@ -70,7 +86,7 @@ wp_reset_postdata();
 ?>
             </div>
         </div>
-<div class="jumbotron col-lg-8 col-lg-offset-2 ">
+<div class="jumbotron col-lg-8 col-lg-offset-2 " >
 
 <!-- <h2>Oferta okolicznościowa</h2> -->
                     <p>Zapraszamy do zapoznania się z naszą ofertą okolicznościową</p>
@@ -110,7 +126,6 @@ wp_reset_postdata();
 <h4 id="audio">audio</h4>
 <?php // echo do_shortcode('[cue id="149"]'); ?>
 <?php echo do_shortcode('[playlist ids="176,173,174,172,175,169,171,170,166,168,167,137,136,135,134,133,132,129,130,131,127,128,110,111,109"]'); ?>
-<?php echo do_shortcode('[mp3player width=500 height=200 config=fmp_jw_widget_config.xml playlist=fmp_jw_widget_playlist.xml file=afaf]'); ?>
 	
 
 <!--video karuzela  -->
@@ -120,38 +135,38 @@ wp_reset_postdata();
   <ol class="carousel-indicators">
     <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-video" data-slide-to="1"></li>
-    <li data-target="#carousel-video" data-slide-to="2"></li>
+    <!-- <li data&#45;target="#carousel&#45;video" data&#45;slide&#45;to="2"></li> -->
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item"
- width="560" height="315" src="https://www.youtube.com/embed/SSIVecWk6XA?rel=0"  allowfullscreen></iframe>
-</div>
-      <div class="carousel-caption">
-	<p>Tytuł piosenki</p>
-      </div>
-    </div>
-    <div class="item">
-<div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" 
- width="480" height="360" src="https://www.youtube.com/embed/vop7MkkkWBU?rel=0"  allowfullscreen></iframe>
+ width="853" height="480" src="https://www.youtube.com/embed/Nusx10O39CA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
       <div class="carousel-caption">
-	<h3>Tytuł piosenki</h3>
+	<!-- <p>Tytuł piosenki</p> -->
       </div>
     </div>
-    <div class="item">
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" 
- width="560" height="315" src="https://www.youtube.com/embed/oC-GflRB0y4" allowfullscreen></iframe>
-</div>
-      <div class="carousel-caption">
-	<h3>Tytuł piosenki</h3>
-      </div>
-    </div>
+<!--     <div class="item"> -->
+<!-- <div class="embed&#45;responsive embed&#45;responsive&#45;16by9"> -->
+<!--   <iframe class="embed&#45;responsive&#45;item"  -->
+<!--  width="480" height="360" src="https://www.youtube.com/embed/vop7MkkkWBU?rel=0"  allowfullscreen></iframe> -->
+<!-- </div> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!-- 	<h3>Tytuł piosenki</h3> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!-- <div class="embed&#45;responsive embed&#45;responsive&#45;16by9"> -->
+<!--   <iframe class="embed&#45;responsive&#45;item"  -->
+<!--  width="560" height="315" src="https://www.youtube.com/embed/oC&#45;GflRB0y4" allowfullscreen></iframe> -->
+<!-- </div> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!-- 	<h3>Tytuł piosenki</h3> -->
+<!--       </div> -->
+<!--     </div> -->
   </div>
 
   <!-- Controls -->
@@ -164,70 +179,76 @@ wp_reset_postdata();
     <span class="sr-only">Next</span>
   </a>
 </div>
-<!-- karuzela zdjęcia -->
+<!-- plugin zdjęcia -->
 <h4 id="slajd">Zdjęcia</h4>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik2.jpg" alt="Nasze zdjęcia">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik3.jpg" alt="Nasze zdjęcia">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik4.jpg" alt="Nasze zdjęcia">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik5.jpg" alt="Nasze zdjęcia">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik6.jpg" alt="Nasze zdjęcia">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik7.jpg" alt="Nasze zdjęcia">
-      <div class="carousel-caption">
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<?php  echo do_shortcode('[envira-gallery id="150"]'); ?>
+<!-- karuzela zdjęcia -->
+<!--                  -->
+<!-- <div id="carousel&#45;example&#45;generic" class="carousel slide" data&#45;ride="carousel" data&#45;interval="false"> -->
+<!--   <!&#45;&#45; Indicators &#45;&#45;> -->
+<!--   <ol class="carousel&#45;indicators"> -->
+<!--     <li data&#45;target="#carousel&#45;example&#45;generic" data&#45;slide&#45;to="0" class="active"></li> -->
+<!--     <li data&#45;target="#carousel&#45;example&#45;generic" data&#45;slide&#45;to="1"></li> -->
+<!--     <li data&#45;target="#carousel&#45;example&#45;generic" data&#45;slide&#45;to="2"></li> -->
+<!--     <li data&#45;target="#carousel&#45;example&#45;generic" data&#45;slide&#45;to="3"></li> -->
+<!--     <li data&#45;target="#carousel&#45;example&#45;generic" data&#45;slide&#45;to="4"></li> -->
+<!--     <li data&#45;target="#carousel&#45;example&#45;generic" data&#45;slide&#45;to="5"></li> -->
+<!--   </ol> -->
+<!--  -->
+<!--   <!&#45;&#45; Wrapper for slides &#45;&#45;> -->
+<!--   <div class="carousel&#45;inner" role="listbox"> -->
+<!--     <div class="item active"> -->
+<!--       <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik2.jpg" alt="Nasze zdjęcia"> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!--       <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik3.jpg" alt="Nasze zdjęcia"> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!--       <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik4.jpg" alt="Nasze zdjęcia"> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!--       <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik5.jpg" alt="Nasze zdjęcia"> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!--       <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik6.jpg" alt="Nasze zdjęcia"> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!--       <img src="<?php echo get_template_directory_uri();?>/slajd/zalacznik7.jpg" alt="Nasze zdjęcia"> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--  -->
+<!--   <!&#45;&#45; Controls &#45;&#45;> -->
+<!--   <a class="left carousel&#45;control" href="#carousel&#45;example&#45;generic" role="button" data&#45;slide="prev"> -->
+<!--     <span class="glyphicon glyphicon&#45;chevron&#45;left" aria&#45;hidden="true"></span> -->
+<!--     <span class="sr&#45;only">Previous</span> -->
+<!--   </a> -->
+<!--   <a class="right carousel&#45;control" href="#carousel&#45;example&#45;generic" role="button" data&#45;slide="next"> -->
+<!--     <span class="glyphicon glyphicon&#45;chevron&#45;right" aria&#45;hidden="true"></span> -->
+<!--     <span class="sr&#45;only">Next</span> -->
+<!--   </a> -->
+<!-- </div> -->
 <!-- koniec row -->
             </div>
         </div>
+        </br>
+</br>
     </section>
 <!-- Partnerzy -->
-    <section id="partnerzy" class="content-section text-center">
-        <div class="download-section kolor-ciemny">
+    <section id="partnerzy" class="content-section text-center kolor-ciemny">
+        <div class="download-section ">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Partnerzy</h2>
@@ -265,12 +286,13 @@ Zapewniamy profesjonalną oprawę każdej imprezy. Zachęcamy do kontaktu w celu
                     <li>
                         <a href="https://www.facebook.com/NoStress-562251003785719/?fref=ts" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
+
     </section>
 
 <?php get_footer(); ?>
