@@ -7,7 +7,7 @@
             <p ><a href="mailto:nostress6@o2.pl">nostress6@o2.pl</a> </p>
                 </div>
                 <div class="col-sm-4 ">
-<a style="width:70px; margin:auto;" href="#page-top" class="btn btn-circle page-scroll">
+<a style="width:70px; margin:auto;" href="#page-top" class="btn btn-circle page-scroll hidden-xs">
                             <i class="fa fa-angle-double-up animated"></i></a>
                     </div>
                 <div class="col-sm-4 ">

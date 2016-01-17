@@ -15,6 +15,8 @@
  */
 get_header(); ?>
     <!-- Intro Header -->
+<div id="podmenu">
+</div>
     <header class="intro">
         <div class="intro-body">
             <div class="container">
@@ -22,7 +24,7 @@ get_header(); ?>
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading"><?php bloginfo( 'name' ); ?></h1>
                         <p class="intro-text"> <?php bloginfo( 'description' ); ?></p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#about" class="btn btn-circle page-scroll hidden-xs">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -51,7 +53,7 @@ if ( $the_query->have_posts() ) {
 wp_reset_postdata();
 ?>
             </div>
-<img class="img-responsive" alt="zespół NoStress" src="<?php echo get_template_directory_uri(); ?>/img/zalacznik6.jpg"/>
+<img class="img-szerokosc img-responsive" alt="zespół NoStress" src="<?php echo get_template_directory_uri(); ?>/img/zalacznik6.jpg"/>
         </div>
     </section>
 
@@ -135,7 +137,7 @@ wp_reset_postdata();
   <ol class="carousel-indicators">
     <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-video" data-slide-to="1"></li>
-    <!-- <li data&#45;target="#carousel&#45;video" data&#45;slide&#45;to="2"></li> -->
+       <li data-target="#carousel-video" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -149,6 +151,27 @@ wp_reset_postdata();
 	<!-- <p>Tytuł piosenki</p> -->
       </div>
     </div>
+ 
+         <div class="item">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" 
+ width="853" height="480" src="https://www.youtube.com/embed/BEsbRtf2ZJ4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+      <div class="carousel-caption">
+	<!-- <p>Tytuł piosenki</p> -->
+      </div>
+    </div>
+      
+         <div class="item">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" 
+ width="853" height="480" src="https://www.youtube.com/embed/Unrw5X7UIcQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+      <div class="carousel-caption">
+	<!-- <p>Tytuł piosenki</p> -->
+      </div>
+    </div>
+
 <!--     <div class="item"> -->
 <!-- <div class="embed&#45;responsive embed&#45;responsive&#45;16by9"> -->
 <!--   <iframe class="embed&#45;responsive&#45;item"  -->
