@@ -1,0 +1,73 @@
+
+<!--video karuzela  -->
+<h4 id="video">Video</h4>
+<div id="carousel-video" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-video" data-slide-to="1"></li>
+       <li data-target="#carousel-video" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" 
+ width="853" height="480" src="https://www.youtube.com/embed/Nusx10O39CA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+      <div class="carousel-caption">
+	<!-- <p>Tytuł piosenki</p> -->
+      </div>
+    </div>
+ 
+         <div class="item">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" 
+ width="853" height="480" src="https://www.youtube.com/embed/BEsbRtf2ZJ4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+      <div class="carousel-caption">
+	<!-- <p>Tytuł piosenki</p> -->
+      </div>
+    </div>
+      
+         <div class="item">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" 
+ width="853" height="480" src="https://www.youtube.com/embed/Unrw5X7UIcQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+      <div class="carousel-caption">
+	<!-- <p>Tytuł piosenki</p> -->
+      </div>
+    </div>
+
+<!--     <div class="item"> -->
+<!-- <div class="embed&#45;responsive embed&#45;responsive&#45;16by9"> -->
+<!--   <iframe class="embed&#45;responsive&#45;item"  -->
+<!--  width="480" height="360" src="https://www.youtube.com/embed/vop7MkkkWBU?rel=0"  allowfullscreen></iframe> -->
+<!-- </div> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!-- 	<h3>Tytuł piosenki</h3> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="item"> -->
+<!-- <div class="embed&#45;responsive embed&#45;responsive&#45;16by9"> -->
+<!--   <iframe class="embed&#45;responsive&#45;item"  -->
+<!--  width="560" height="315" src="https://www.youtube.com/embed/oC&#45;GflRB0y4" allowfullscreen></iframe> -->
+<!-- </div> -->
+<!--       <div class="carousel&#45;caption"> -->
+<!-- 	<h3>Tytuł piosenki</h3> -->
+<!--       </div> -->
+<!--     </div> -->
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-video" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-video" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
